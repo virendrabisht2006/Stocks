@@ -21,3 +21,10 @@ spring:
       path: /console
       settings:
         trace: true
+
+management:
+  security:
+    enabled: false
+  health:
+    defaults:
+      enabled: true

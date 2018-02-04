@@ -10,6 +10,7 @@ and provide a LIST of API which will are as follow.
 | spring-boot-starter-data-jpa   | 1.5.7.RELEASE    |     -                             |
 | spring-boot-starter-web        | 1.5.7.RELEASE    |     -                             |
 | spring-boot-starter-data-rest  | 1.5.7.RELEASE    |     -                             |
+| spring-boot-starter-actuator   | 1.5.7.RELEASE    | For health check                  |
 | h2database                     | 1.4.182          | For in-memory database            |
 | mockito-all                    | 1.10.8           | Mocking Framework                 |
 | log4j                          | 1.2.17           | For logging                       |
@@ -21,6 +22,9 @@ and provide a LIST of API which will are as follow.
 
 # API Exposed:
 
+Method= GET, URL:http://localhost:8080/health
+Description: This will help to get the complete health of system example: status, memory, and external interface status like h2 database.
+
 Method= GET, URL:/v1/stocks/welcome
 Description: This API will provide welcome screen and may be used for just to check if application is reachable or not.
 
@@ -31,7 +35,7 @@ Description: This might be the first operation you would like to do. Based on sa
 
 Method= POST, URL: /v1/stocks
 Description: This API will store/add stock in system. This is POST request through POSTMAN or REST template
-             you can call this API with below Json as example. 
+             you can calling this API with below Json as example. 
 
 {
 "stockSymbol":"SBI",

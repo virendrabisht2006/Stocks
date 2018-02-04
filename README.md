@@ -9,7 +9,7 @@ and provide a LIST of API which will are as follow.
 | spring-boot-starter-parent     | 1.5.7.RELEASE    | To enable spring boot application |
 | spring-boot-starter-data-jpa   | 1.5.7.RELEASE    |     -                             |
 | spring-boot-starter-web        | 1.5.7.RELEASE    |     -                             |
-| spring-boot-starter-data-rest  | 1.5.7.RELEASE    |      -                            |
+| spring-boot-starter-data-rest  | 1.5.7.RELEASE    |     -                             |
 | h2database                     | 1.4.182          | For in-memory database            |
 | mockito-all                    | 1.10.8           | Mocking Framework                 |
 | log4j                          | 1.2.17           | For logging                       |
@@ -45,7 +45,7 @@ Method= GET, URL: /v1/stocks
 Description: Find all available stocks, which we can traded.
 
 Method= GET, URL: /v1/stocks/stockSymbol/{stockSymbol}  -- verify again
-Description: Get the stock data for given stockSymbol, if stock not available in system will through a StockException.
+Description: Get the stock data for given stockSymbol, if stock not available in system will throw a StockException.
 
 Method= GET, URL: /v1/stocks/dividend/stockSymbol/{stockSymbol}/marketPrice/{marketPrice}
 Description: API will calculate Dividend for given stockSymbol and marketPrice should be pass as path variable.
@@ -58,7 +58,7 @@ Description: API will calculate Profit and Ratio(PERatio) for given stockSymbol 
 
 Method= POST, URL: /v1/stocks/trade
 Description: This API will execute the trade.It assume that stock already present in system. If given stock not available
-              It will through a StockException. This POST request one can execute Trade by call this API through POSTMAN or REST template
+              It will throw a StockException. This POST request one can execute Trade by call this API through POSTMAN or REST template
               by passing below json in body of request.
 
 NOTE- stockSymbol and type is mandatory and composite unique constraint, other parameter of stock object could be null.

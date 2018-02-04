@@ -1,6 +1,11 @@
 # Stocks
 This is super simple stocks calculator Application. This Stock application built up using spring boot 
-and provide a LIST of API which will are as follow. 
+and provide a LIST of API which will are as follow. I have tried use maximum of Java8 and TDD.
+
+Build the source code using maven command:
+maven> mvn clean install
+
+Start "StockApplication.java"
 
 # Library Used
 -----------------------------------------------------------------------------------------

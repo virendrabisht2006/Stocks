@@ -10,7 +10,7 @@ and provide a LIST of API which will are as follow.
 | spring-boot-starter-data-jpa   | 1.5.7.RELEASE    |     -                             |
 | spring-boot-starter-web        | 1.5.7.RELEASE    |     -                             |
 | spring-boot-starter-data-rest  | 1.5.7.RELEASE    |      -                            |
-| h2database                 | 1.4.182          | For in-memory database                |
+| h2database                     | 1.4.182          | For in-memory database            |
 | mockito-all                    | 1.10.8           | Mocking Framework                 |
 | log4j                          | 1.2.17           | For logging                       |
 | junit                          | 4.12             | For unit testing, followed TDD    |

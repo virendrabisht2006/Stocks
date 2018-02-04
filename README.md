@@ -3,18 +3,19 @@ This is super simple stocks calculator Application. This Stock application built
 and provide a LIST of API which will are as follow. 
 
 # Library Used
-Library                         Version         Description
-spring-boot-starter-parent     1.5.7.RELEASE    To enable spring boot application
-spring-boot-starter-data-jpa   1.5.7.RELEASE            -
-spring-boot-starter-web        1.5.7.RELEASE            -
-spring-boot-starter-data-rest  1.5.7.RELEASE            -
-com.h2database                 1.4.182           For in-memory database
-mockito-all                    1.10.8            Mocking Framework
-log4j                          1.2.17            For logging 
-junit                          4.12              For unit testing, followed TDD
-swagger                        1.5.16            For API Documentation
-
------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------
+| Library                        | Version         | Description                        |
+-----------------------------------------------------------------------------------------
+| spring-boot-starter-parent     | 1.5.7.RELEASE    | To enable spring boot application |
+| spring-boot-starter-data-jpa   | 1.5.7.RELEASE    |     -                             |
+| spring-boot-starter-web        | 1.5.7.RELEASE    |     -                             |
+| spring-boot-starter-data-rest  | 1.5.7.RELEASE    |      -                            |
+| h2database                 | 1.4.182          | For in-memory database                |
+| mockito-all                    | 1.10.8           | Mocking Framework                 |
+| log4j                          | 1.2.17           | For logging                       |
+| junit                          | 4.12             | For unit testing, followed TDD    |
+| swagger                        | 1.5.16           | For API Documentation             |
+-----------------------------------------------------------------------------------------
 
 # Assumption
 

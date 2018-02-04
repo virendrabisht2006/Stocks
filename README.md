@@ -19,6 +19,10 @@ and provide a LIST of API which will are as follow.
 -----------------------------------------------------------------------------------------
 
 # Assumption
+The stock data will be loaded first before starting for trade. Only listed stock can be traded. And also stock data will be 
+", " i.e. comma separated. like below.
+StockSymbol,Type, LastDividend, FixDividend,ParValue
+TEA,Common,0,,100
 
 # API Exposed:
 

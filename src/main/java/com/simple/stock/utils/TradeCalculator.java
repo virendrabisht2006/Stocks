@@ -10,6 +10,9 @@ import java.util.stream.Collectors;
 
 public class TradeCalculator {
 
+    private TradeCalculator(){
+
+    }
 
     public static double calculateDividendPerStock(Stock stock, double marketPrice) {
         double dividend = 0;

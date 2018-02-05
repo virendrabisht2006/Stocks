@@ -1,5 +1,5 @@
 
-#Stocks
+# Stocks
 This is super simple stocks calculator Application. This Stock application built up using spring boot 
 and provide a LIST of API which will are as follow. I have tried use maximum of Java8 and TDD.
 
@@ -7,9 +7,10 @@ Build the source code using maven command:
 maven> mvn clean install
 
 Start "StockApplication.java"
-#Librarry Used
+# Library Used
+
 -----------------------------------------------------------------------------------------
-| Artifect                        | Version         | Description                       |
+| Artifact                        | Version         | Description                       |
 -----------------------------------------------------------------------------------------
 | spring-boot-starter-parent     | 1.5.7.RELEASE    | To enable spring boot application |
 | spring-boot-starter-data-jpa   | 1.5.7.RELEASE    |     -                             |
@@ -23,7 +24,7 @@ Start "StockApplication.java"
 | swagger-annotation             | 1.5.16           | For API Documentation             |
 -----------------------------------------------------------------------------------------
 
-#Assumption
+# Assumption
 The stock data will be loaded first before starting for trade. Only listed stock can be traded. And also stock data will be 
 ", " i.e. comma separated. like below.
 

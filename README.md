@@ -9,8 +9,9 @@ maven> mvn clean install
 Start "StockApplication.java"
 
 # Library Used
+
 -----------------------------------------------------------------------------------------
-| Library                        | Version         | Description                        |
+| Library                        | Version         | Description                        |
 -----------------------------------------------------------------------------------------
 | spring-boot-starter-parent     | 1.5.7.RELEASE    | To enable spring boot application |
 | spring-boot-starter-data-jpa   | 1.5.7.RELEASE    |     -                             |

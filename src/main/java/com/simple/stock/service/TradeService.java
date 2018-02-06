@@ -12,6 +12,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.Date;
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class TradeService {
@@ -30,7 +31,10 @@ public class TradeService {
     private StockService stockService;
 
     public Trade recordTrade(Trade trade) throws StockException {
-        String stockSymbol = trade.getStock().getStockSymbol();
+        Optional<Stock> stockOptional = Optional.ofNullable(trade.getStock());
+        Stock tradeStock = stockOptional.isPresent() ? stockOptional.get() : null;
+        Optional<String> stockSymbolOptional = Optional.ofNullable(tradeStock.getStockSymbol());
+        String stockSymbol = stockSymbolOptional.isPresent() ? stockSymbolOptional.get() : null;
         if (null == stockSymbol) {
             throw new StockException("StockSymbol is mandatory, please enter valid stockSymbol in input request");
         }

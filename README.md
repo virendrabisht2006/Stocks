@@ -101,3 +101,14 @@ Description: This API will calculate the GBCE All Share Index using the geometri
 
 To see the data state, open URL: http://localhost:8080/console 
 
+
+# Future Scope
+
+1- Write integration test
+2- Implement BDD
+3- Write custom generic exception, because at this moment exception contain a complete stack trace and at the end it
+shows a actual error message.
+4- Can be integrated with any other data source, may be oracle
+5- Write this code in python.
+6- May be dashboard kind of UI for all the supported operation.
+7- Security at this moment API's are not secured

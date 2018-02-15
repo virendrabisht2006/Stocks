@@ -12,7 +12,7 @@ import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExcep
 public class StockExceptionHandler extends ResponseEntityExceptionHandler {
 
     @ExceptionHandler(StockException.class)
-    public final ResponseEntity<Object> handleKysException(Exception ex, WebRequest request) {
+    public final ResponseEntity<Object> handleStockException(Exception ex, WebRequest request) {
         return new ResponseEntity<Object>(ex, HttpStatus.BAD_REQUEST);
     }
 }

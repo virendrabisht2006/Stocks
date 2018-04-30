@@ -30,11 +30,15 @@ import java.util.List;
 public class StockController {
 
     private static final String FILE_INSTRUCTION = "sample-stock.csv";
+
     private final static Logger logger = Logger.getLogger(StockController.class);
+
     @Autowired
     private StockService stockService;
+
     @Autowired
     private TradeService tradeService;
+
     private ObjectMapper objectMapper = new ObjectMapper();
 
     private String response = null;

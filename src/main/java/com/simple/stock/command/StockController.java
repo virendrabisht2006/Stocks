@@ -154,8 +154,9 @@ public class StockController {
     public ResponseEntity<?> addStock(@RequestBody Stock stock, UriComponentsBuilder ucBuilder) {
         logger.info("About to add stocks");
         stockService.save(stock);
-
+        Stock stock1 = stockService.getStock(stock.getStockSymbol());
         response = "Stock persisted successfully to check call API 'v1/stocks/stockSymbol/{stockSymbol}' ";
+        response = parseObjectAsString(stock1);
         HttpHeaders headers = new HttpHeaders();
         headers.setLocation(ucBuilder.path("/stockSymbol/{stockSymbol}").buildAndExpand(stock.getStockSymbol()).toUri());
         return new ResponseEntity<String>(response, headers, HttpStatus.OK);

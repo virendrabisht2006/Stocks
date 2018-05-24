@@ -22,6 +22,7 @@
         <swagger.api.version>1.5.16</swagger.api.version>
         <junit.mockito.version>1.10.8</junit.mockito.version>
         <version.log4j>1.2.17</version.log4j>
+        <version.zipkin.starter>1.3.3.RELEASE</version.zipkin.starter>
     </properties>
 
     <dependencies>
@@ -79,6 +80,18 @@
             <artifactId>mockito-all</artifactId>
             <version>${junit.mockito.version}</version>
             <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-zipkin</artifactId>
+            <version>${version.zipkin.starter}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-sleuth</artifactId>
+            <version>${version.zipkin.starter}</version>
         </dependency>
 
     </dependencies>

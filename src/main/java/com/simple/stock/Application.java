@@ -9,9 +9,9 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 @SpringBootApplication
 @EnableJpaRepositories
 @EntityScan("com.simple.stock")
-public class StockApplication {
+public class Application {
 
     public static void main(String[] args) {
-        SpringApplication.run(StockApplication.class, args);
+        SpringApplication.run(Application.class, args);
     }
 }

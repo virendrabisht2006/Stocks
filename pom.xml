@@ -16,7 +16,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <start-class>com.abc.store.Application</start-class>
+        <start-class>com.simple.stock.Application</start-class>
         <java.version>1.8</java.version>
         <h2.version>1.4.182</h2.version>
         <swagger.api.version>1.5.16</swagger.api.version>

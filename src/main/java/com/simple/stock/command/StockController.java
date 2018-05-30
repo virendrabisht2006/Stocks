@@ -147,7 +147,7 @@ public class StockController {
     }
 
 
-    @RequestMapping(value = "", method = RequestMethod.POST)
+    @RequestMapping(value = "", method = {RequestMethod.POST, RequestMethod.OPTIONS})
     @ResponseBody
     @ApiOperation(value = "/v1/stocks", notes = "Add stock and store into db, this might first operation to start",
             responseContainer = "Return HTTP 200 code on success and URI to query added stock")

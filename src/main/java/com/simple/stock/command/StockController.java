@@ -27,6 +27,7 @@ import java.util.List;
         "and for a given stock calculate the following " +
         "Given a market price as input, calculate the dividend yield" +
         "Given a market price as input,  calculate the P/E Ratio etc")
+@CrossOrigin
 public class StockController {
 
     private static final String FILE_INSTRUCTION = "sample-stock.csv";
